@@ -1,10 +1,10 @@
-from django.urls import path, include
+from django.urls import path
 from pages.views import *
 
 
 urlpatterns = [
     path('helo/', help),
-    path("",homePageView, name='home'),
-    path('1/', HomePageView.as_view(), name='homme'),
-    path('1/', AboutPageView.as_view(), name='about')
+    path("",homePageView, name='homme'),
+    path('home/', HomePageView.as_view(), name='home'),
+    path('about/', AboutPageView.as_view(), name='about')
 ]
